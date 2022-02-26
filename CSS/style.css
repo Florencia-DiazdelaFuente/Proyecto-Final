@@ -75,13 +75,33 @@ header div {
         font-weight: 900;
         text-align: center;
         padding-top: 5%;
+        animation-name: animacionTitulo;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-duration: 4s;
+    }
+    @keyframes animacionTitulo {
+        from {opacity: 0;}
+        to {opacity: 1;}
     }
 
     .indexTexto {
         line-height: 2;
         text-align: justify;
         padding: 5% 15%;
-
+    }
+    .IndexIconoPelota {
+        width: 50px;
+        height: 50px;
+        animation-name: animacionPelota;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        position: relative;
+    }
+    @keyframes animacionPelota {
+        from {left: 70px; top: 75px; opacity: 1;}
+        to {left: 550px; top: 75px; opacity: 0;}
     }
 
     .entrGridContainer {
@@ -89,10 +109,21 @@ header div {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
+    .entrGridItemBoxImg {
+        overflow: hidden;
+    }
 
     .entrGridItemImg {
-        align-self: stretch;
+        height: 100%;
         width: 100%;
+        transition: transform 2s;
+        
+        
+    }
+    .entrGridItemImg:hover {
+        transform: scale(1.1);
+        
+
     }
 
     .entrGridItemText {
@@ -106,6 +137,7 @@ header div {
         color: #edf2f4;
         font-weight: 100;
         padding: 0 15px;
+        background-image: linear-gradient(rgb(43, 45, 66, 0.9), black);
     }
 
     .torneosGridContainer {
