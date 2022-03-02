@@ -4,61 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Principal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../CSS/style.css">
+    <title>Proyecto Principal</title>
 </head>
 <body>
     <header>
-        <div> 
-            <a href="../index.html"> <img src="../assets/images/logo.jpg" alt="logo" class="headerLogo"></a>
-            <img src="../assets/icons/iconoMenu.png" alt="iconoMenu" class="menu">
-            <nav>
-                <ul>
-                    <li><a href="../index.html"> INICIO </a> </li>
-                    <li> <a href="entrenamientos.html"> ENTRENAMIENTOS </a></li>
-                    <li> <a href="torneos.html"> TORNEOS </a> </li>
-                    <li> <a href="staff.html"> STAFF </a></li>
-                    <li> <a href="contacto.html"> CONTACTO</a></li>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a href="../index.html"> <img src="../assets/images/logo.jpg" class="headerLogo" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-5 fw-bold">
+                    <li class="nav-item"><a href="../index.html" class="nav-link"> INICIO</a> </li>
+                    <li class="nav-item"> <a href="entrenamientos.html" class="nav-link">ENTRENAMIENTOS </a></li>
+                    <li class="nav-item"> <a href="torneos.html" class="nav-link">TORNEOS</a> </li>
+                    <li class="nav-item"> <a href="staff.html" class="nav-link">STAFF</a></li>
+                    <li class="nav-item"> <a href="contacto.html" class="nav-link">CONTACTO</a></li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
     <main>
-        <h3>CONTACTO</h3>
-        <section>
-            <form action="" method="" enctype="" class="contactForm">
-            <div class="contactFormItem">
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre" class="contactFormInput">
+        <h3 class="h3 fs-5 text-light fw-bold bg-dark py-4 text-center">CONTACTO</h3>
+        <section class="container my-5">
+            <div class="row">
+                <div class="col-sm-10 col-md-8 col-lg-6 border mx-auto bg-light fw-bold">
+                    <form action="" method="" enctype="">
+                        <div class="mb-3 mt-3">
+                            <label for="nombre" class="form-label">Nombre y apellido</label>
+                            <input type="text" class="form-control" id="nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cel" class="form-label">Celular</label>
+                            <input type="number" class="form-control" id="cel">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-dark mb-2">ENVIAR</button> 
+                        </div>   
+                        </form>
+                </div>
+                
             </div>
-            <div class="contactFormItem">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="ejemplo@dominio.com" class="contactFormInput">
-            </div>
-            <div class="contactFormItem"> 
-                <label for="cel">Celular:</label>
-                <input type="number" name="cel" id="cel" class="contactFormInput">
-            </div>
-            <div class="contactFormItem"> 
-                <label for="mensaje">Mensaje:</label>
-                <input type="text" name="mensaje" id="mensaje" class="contactFormInputMensaje">
-            </div>
-            <button type="submit" class="button">ENVIAR</button> 
-            </form>
+            
         </section>
         
     </main>
     <footer>
-        <section>
-            <a href="../index.html"> <img src="../assets/images/logo.jpg" alt="logo" class="footerLogo"></a>
-            <ul>
-                <li>(011) 1234-5678</li>
-                <li>escuelafutfem@gmail.com</li>
-            </ul>
-            <div>
-                <a href="https://twitter.com/?lang=es"> <img src="../assets/icons/twitterBlanco.png" alt="logoTwitter" class="logoRRSS"></a>
-                <a href="https://www.instagram.com/"> <img src="../assets/icons/instagramBlanco.png" alt="logoInstagram" class="logoRRSS"></a>
-                <a href="https://www.facebook.com/"> <img src="../assets/icons/facebookBlanco.png" alt="logoFacebook" class="logoRRSS"></a>
+        <section class="container">
+            <div class="row d-flex align-items-center justify-content-between">
+                <div class="col-3">
+                    <a href="../index.html"> <img src="../assets/images/logo.jpg" alt="logo" class="footerLogo"></a>
+                </div>
+                <div class="col-3">
+                    <ul class="text-light fst-italic list-unstyled text-center small">
+                        <li>(011) 1234-5678</li>
+                        <li>escuelafutfem@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="col-3 d-flex justify-content-around align-items-center flex-sm-column flex-md-row">
+                    <a href="https://twitter.com/?lang=es"> <img src="../assets/icons/twitterBlanco.png" alt="logoTwitter" class="logoRRSS"></a>
+                    <a href="https://www.instagram.com/"> <img src="../assets/icons/instagramBlanco.png" alt="logoInstagram" class="logoRRSS"></a>
+                    <a href="https://www.facebook.com/"> <img src="../assets/icons/facebookBlanco.png" alt="logoFacebook" class="logoRRSS"></a>
+                </div>
             </div>
         </section>
     </footer>

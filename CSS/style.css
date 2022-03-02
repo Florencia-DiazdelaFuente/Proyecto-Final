@@ -9,7 +9,7 @@ header {
     background-color: rgb(43, 45, 66);
 }
 
-header div {
+/* header div {
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -39,15 +39,15 @@ header div {
     }
     header div nav ul li a:hover {
         background-color: rgb(255, 255, 255, 0.2);
-    }
+    } */
 
-    h3 {
+    /* h3 {
         background-color: black;
         text-align: center;
         color: #edf2f4;
         padding-top: 30px;
         padding-bottom: 30px;
-    }
+    } */
 
 
 
@@ -61,12 +61,12 @@ header div {
         
     }
 
-    .indexSection {
+    /* .indexSection {
         width: 50%;
         height: 50%;
         display: flex;
         flex-direction: column;
-    }
+    } */
 
 
     .indexTitulo {
@@ -80,17 +80,17 @@ header div {
         animation-direction: alternate;
         animation-duration: 4s;
     }
-    @keyframes animacionTitulo {
+    /* @keyframes animacionTitulo {
         from {opacity: 0;}
         to {opacity: 1;}
-    }
+    } */
 
     .indexTexto {
         line-height: 2;
         text-align: justify;
         padding: 5% 15%;
     }
-    .IndexIconoPelota {
+    /* .IndexIconoPelota {
         width: 50px;
         height: 50px;
         animation-name: animacionPelota;
@@ -98,11 +98,11 @@ header div {
         animation-iteration-count: infinite;
         animation-direction: alternate;
         position: relative;
-    }
-    @keyframes animacionPelota {
+    } */
+    /* @keyframes animacionPelota {
         from {left: 70px; top: 75px; opacity: 1;}
         to {left: 550px; top: 75px; opacity: 0;}
-    }
+    } */
 
     .entrGridContainer {
         display: grid;
@@ -192,7 +192,7 @@ header div {
         width: 200px;
         height: 200px;
     }
-    .contactForm {
+    /* .contactForm {
         background-color: whitesmoke;
         height: 400px;
         width: 40%;
@@ -202,12 +202,12 @@ header div {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-    }
-    .contactFormInput {
+    } */
+    /* .contactFormInput {
         background-color: #8d99ae;
         width: 70%; height: 120%;
-    }
-    .contactFormInputMensaje {
+    } */
+    /* .contactFormInputMensaje {
         background-color: #8d99ae;
         width: 70%; height: 280%;
     }
@@ -224,19 +224,19 @@ header div {
         width: 30%;
         margin-left: 35%;
 
-    }
+    } */
 
     footer {
         background-color: #2b2d42;
     }
-    footer section { 
+    /* footer section { 
         width: 90%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 0 auto;
-    }
-    footer section div a {
+    } */
+    /* footer section div a {
         padding: 5px 5px;
     }
     footer section ul {
@@ -250,7 +250,7 @@ header div {
         font-style: italic;
         font-size: 70%;
         color: #edf2f4;
-    }
+    } */
     .footerLogo {
         width: 85px;
     }
@@ -307,7 +307,7 @@ header div {
             width: 100px;
             height: 100px;
         }    
-        .contactForm {
+        /* .contactForm {
             height: 300px;
             width: 50%;
             margin-top: 5%;
@@ -325,17 +325,26 @@ header div {
             width: 30%;
             margin-left: 35%;
             font-size: 10px;
+        } */
         }
-        }
+
+        @media (max-width:768px)
+    {
+        .indexPortada {
+            background-image: url(../assets/images/pelotaPortada.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+    }
 
     @media (max-width:520px){
         
-        footer section div {
+        /* footer section div {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-        }
+        } */
         .logoRRSS {
             width: 20px;
         }
@@ -354,11 +363,7 @@ header div {
         main {
             font-size: 50%;
         }
-        .indexPortada {
-            background-image: url(../assets/images/pelotaPortada.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-
+        
         }
 
         .indexTitulo {
@@ -380,6 +385,9 @@ header div {
         }
 
         .entrGridItemImg {
+            display: none;
+        }
+        .entrGridItemBoxImg {
             display: none;
         }
         .entrGridContainer {
@@ -444,10 +452,10 @@ header div {
     .mapa {
         grid-area: 3 / 1 / 4 / 2;
     }
-    .contactForm {
+    /* .contactForm {
         height: 300px;
         width: 70%;
         margin-left: 15%;
-    }
+    } */
     }
     
