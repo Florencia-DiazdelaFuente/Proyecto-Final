@@ -4,7 +4,7 @@
   "description": "Proyecto final curso Desarrollo Web\r ---\r *Página web de escuela de fútbol femenino*",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "sass scss/style.scss css/style.css -w -s compressed"
   },
   "repository": {
     "type": "git",

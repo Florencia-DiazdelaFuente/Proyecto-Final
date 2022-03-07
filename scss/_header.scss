@@ -1,0 +1,28 @@
+header {
+    background-color: $colorBase;
+
+    .headerLogo {
+        transition: scale 2s ease;
+
+        &:hover {
+            transform: scale(105%);
+        opacity: 0.9;
+        }
+    }
+    .headerMenu {
+        background-color: rgb(255, 255, 255, 0.05);
+        border-radius: 10px;
+        margin: 0 5px;
+
+        &:hover { 
+            background-color: rgb(255, 255, 255, 0.2);}
+}
+}
+
+
+
+@media (max-width:575px) {
+    .headerLogo {
+        width: 75px;
+    }
+}

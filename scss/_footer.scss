@@ -1,0 +1,35 @@
+footer {
+    background-color: $colorBase;
+
+    .footerLogo {
+        width: 80px;
+        transition: scale 2s ease;
+        margin: 5px 0;
+
+        &:hover {
+            transform: scale(103%);
+        opacity: 0.9;}
+    }
+    
+    .logoRRSS {
+        width: 30px;
+        transition: scale 2s ease;
+
+        &:hover {
+            transform: scale(105%);}
+    }
+}
+
+
+@media (max-width:575px) {
+    .footerLogo {
+        width: 70px;
+    }
+    .footerRRSS {
+        display: flex;
+        flex-direction: column;
+    }
+    .logoRRSS {
+        width: 20px;
+    }
+}

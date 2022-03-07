@@ -1,0 +1,19 @@
+* {margin: 0; padding: 0;}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: $colorBaseLight;
+}
+
+
+@media (max-width: 895px){
+    main {
+        font-size: 70%;
+    }
+}
+
+@media (max-width:575px) {
+    main {
+        font-size: 50%;
+    }
+}
