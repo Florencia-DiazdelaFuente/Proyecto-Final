@@ -1,44 +1,59 @@
 .torneosGridContainer {
-    height: 100vh;
+    @include sizes(100%, 100vh);
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
     align-items: center;
     color: $colorTextoBase;
-    line-height: 1.8;
-    text-align: center;
+    @extend .textoGlobal;
     background-image: radial-gradient(circle, $colorBaseLight 50%, black);
 
-    .futbol5 {
+
+    $mapa: (
+            futbol5: rgb(154, 115, 182),
+            futbol8: rgb(120, 71, 137),
+        );
+
+        @each $torneos, $color in $mapa {
+            .torneos--#{$torneos} {
+                background-color: $color;
+                @include sizes (90%, auto);
+                padding-top: 5%;
+                
+            }
+        }
+
+    .torneos--futbol5 {
         grid-area: 1 / 1 / 2 / 2;
 
         ul li {
-            list-style: none;
-            text-align: left;
-            text-decoration: underline;
+            list-style: map-get($estilos, lista );
+            text-align: map-get($estilos, izquierda );
+            text-decoration: map-get($estilos, decoracion);
+            color: map-get($estilos, colorletra);
             }
         }
-    .futbol8 {
+    .torneos--futbol8 {
         grid-area: 2 / 1 / 3 / 2;
 
+
         ul li {
-            list-style: none;
-            text-align: left;
-            text-decoration: underline;
+            list-style: map-get($estilos, lista );
+            text-align: map-get($estilos, izquierda );
+            text-decoration: map-get($estilos, decoracion);
+            color: map-get($estilos, colorletra);
             }
         }
     .mapa {
         grid-area: 1 / 2 / 3 / 3;
-        width: 90%;
-        height: 70%;
+        @include sizes(90%, 70%);
 
         .comoLlego {
             text-decoration-line: underline;
             }
         .mapaIframe {
-            width: 500px;
-            height: 400px;
+            @include sizes(500px, 400px);
         }
     }
 }

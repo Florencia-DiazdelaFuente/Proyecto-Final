@@ -5,6 +5,19 @@ body {
     background-color: $colorBaseLight;
 }
 
+.textoGlobal {
+    text-align: center;
+    line-height: 2.5;
+
+}
+
+
+@mixin sizes($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+
+}
+
 
 @media (max-width: 895px){
     main {
