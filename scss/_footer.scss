@@ -9,27 +9,36 @@ footer {
         &:hover {
             transform: scale(103%);
         opacity: 0.9;}
+
+        @media (max-width:575px) {
+            width: 70px;
+        }
+
     }
+
+    .footerTexto {
+        @media (max-width:575px) {
+            font-size: 10px;
+        }
+    }
+
+    .footerRRSS {
+        @media (max-width:575px) {
+                display: flex;
+                flex-direction: column;
+        }
     
     .logoRRSS {
         width: 30px;
         transition: scale 2s ease;
 
         &:hover {
-            transform: scale(105%);}
+            transform: scale(105%);
+        }
+
+        @media (max-width:575px) {
+            width: 20px;
+    }
     }
 }
-
-
-@media (max-width:575px) {
-    .footerLogo {
-        width: 70px;
-    }
-    .footerRRSS {
-        display: flex;
-        flex-direction: column;
-    }
-    .logoRRSS {
-        width: 20px;
-    }
 }

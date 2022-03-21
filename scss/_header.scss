@@ -8,6 +8,9 @@ header {
             transform: scale(105%);
         opacity: 0.9;
         }
+        @media (max-width:575px) {
+                width: 75px;
+            }
     }
     .headerMenu {
         background-color: rgba(255, 255, 255, 0.05);
@@ -17,12 +20,4 @@ header {
         &:hover { 
             background-color: rgba(255, 255, 255, 0.2);}
 }
-}
-
-
-
-@media (max-width:575px) {
-    .headerLogo {
-        width: 75px;
-    }
 }

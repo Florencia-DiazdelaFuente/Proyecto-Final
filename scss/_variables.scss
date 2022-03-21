@@ -3,8 +3,10 @@ $colorBaseLight: rgba(43, 45, 66, 0.9);
 $colorTextoBase: rgb(237, 242, 244);
 
 $estilos: (
-    colorletra: rgb(172, 170, 170),
-    lista: none,
+    colorletra: rgb(43, 45, 66),
+    lista: circle,
     decoracion: underline,
     izquierda: left,
+    fondo: rgb(187, 182, 182),
+    margen: 5px
 );
