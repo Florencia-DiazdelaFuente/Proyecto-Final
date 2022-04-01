@@ -14,13 +14,18 @@
         font-weight: 900;
         text-align: center;
         padding-top: 5%;
-        text-shadow: 2px 2px 4px white;
+        text-shadow: 3px 3px 6px white;
+        text-decoration-line: underline;
+        text-decoration-style: double;
+        text-decoration-color: rgb(255, 68, 104);
     }
     
     .indexTexto {
         @extend .textoGlobal;
         padding: 5% 10%;
-        color: #000;
+        font-weight: bold;
+        color: $colorBase;
         text-shadow: 1px 1px 4px white;
+        text-transform: uppercase;
     }  
 }

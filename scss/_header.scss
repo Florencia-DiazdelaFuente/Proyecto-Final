@@ -2,6 +2,7 @@ header {
     background-color: $colorBase;
 
     .headerLogo {
+        width: 100px;
         transition: scale 2s ease;
 
         &:hover {
